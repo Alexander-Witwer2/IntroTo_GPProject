@@ -14,4 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: Sphere
   displayName: Sphere
+  icon: {fileID: 21300000, guid: 5fbc6f8acdc9d254fabab3b8f6132690, type: 3}
+  description: It's a Sphere
   item: {fileID: 2907656433328611737, guid: 02f23b1f0fe4f704b948d30c0fa3147d, type: 3}

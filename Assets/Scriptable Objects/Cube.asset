@@ -14,4 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: Cube
   displayName: Cube
+  icon: {fileID: 21300000, guid: cec26ccdd4946a242945893dec64f192, type: 3}
+  description: It's a cube
   item: {fileID: 553151956187858539, guid: ac1d81c44b330d34493aa9204ed5dc09, type: 3}

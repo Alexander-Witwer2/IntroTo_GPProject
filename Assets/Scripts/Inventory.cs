@@ -1,13 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Inventory : MonoBehaviour
 {
-    public Transform[] pickups;
+    public GameObject player;
+    public GameObject[] pickups;
+    public GameObject[] invPanels;
     public Animator open;
     private bool opened = false;
     public Behaviour movement;
+    public Behaviour cam;
+    public Behaviour inNav;
+    public static Inventory current;
 
     private Dictionary<InventoryItemData, InventoryItem> inventoryDictionary;
     public List<InventoryItem> inventory { get; private set; }
@@ -16,6 +22,10 @@ public class Inventory : MonoBehaviour
     {
         inventory = new List<InventoryItem>();
         inventoryDictionary = new Dictionary<InventoryItemData,InventoryItem>();
+        current = this;
+
+        pickups = GameObject.FindGameObjectsWithTag("Pickup");
+        invPanels = GameObject.FindGameObjectsWithTag("InvImg");
     }
 
     public InventoryItem Get(InventoryItemData referenceData)
@@ -55,38 +65,42 @@ public class Inventory : MonoBehaviour
         }
     }
 
+    public void Display(){
+        for(int i = 0; i < inventory.Count; i++){
+            invPanels[i].GetComponent<Image>().sprite = inventory[i].data.icon;
+            invPanels[i].GetComponent<Image>().enabled = !invPanels[i].GetComponent<Image>().enabled;
+        }
+    }
+
     private void Update()
     {
         if(Input.GetKeyDown("i"))
         {
+            Display();
             if(!opened)
             {
                 open.SetTrigger("Open");
                 opened = true;
                 movement.enabled = false;
+                cam.enabled = false;
+                inNav.enabled = true;
             }
             else
             {
                 open.SetTrigger("Closed");
                 opened = false;
                 movement.enabled = true;
+                cam.enabled = true;
+                inNav.enabled = false;
             }
         }
-        if(Input.GetKeyDown("space"))
+        if(Input.GetKeyDown(KeyCode.E))
         {
-            /*if(Vector3.Distance(sign.position, gameObject.transform.position) < 0.25f)
-            {
-                if(!panel.activeInHierarchy)
-                {
-                    panel.SetActive(true);
+            for(int i = 0; i < pickups.Length; ++i){
+                if(Vector3.Distance(pickups[i].transform.position, player.transform.position) < 2.0f){
+                    pickups[i].GetComponent<ItemObject>().OnHandlePickupItem();
                 }
-                else if(panel.activeInHierarchy)
-                {
-                    panel.SetActive(false);
-                    break;
-                }
-                text.text = "This is a sign";
-            }*/
+            }
         }
     }
 }

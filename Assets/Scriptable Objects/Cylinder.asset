@@ -14,4 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: Cylinder
   displayName: Cylinder
+  icon: {fileID: 21300000, guid: 76796f015b075104eb59b2c9dbc320c2, type: 3}
+  description: It's a Cylinder
   item: {fileID: 8983598818182201318, guid: 47da69d97b4de4444b4e43da97c4c0ee, type: 3}
