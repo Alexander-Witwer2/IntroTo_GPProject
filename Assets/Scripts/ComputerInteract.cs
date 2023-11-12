@@ -11,7 +11,7 @@ public class ComputerInteract : MonoBehaviour
 
     private void Update(){
         if(Input.GetKeyDown(KeyCode.E)){
-            if(Vector3.Distance(gameObject.transform.position, player.transform.position) < 1.5f){
+            if(Vector3.Distance(gameObject.transform.position, player.transform.position) < 3f){
                 ButtonOne.SetActive(!ButtonOne.activeSelf);
                 ComputerCam.SetActive(!ComputerCam.activeSelf);
                 PlayerCam.SetActive(!PlayerCam.activeSelf);
