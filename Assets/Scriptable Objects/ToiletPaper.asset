@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c7cf7b09c74a08438c2586ec2451167, type: 3}
+  m_Name: ToiletPaper
+  m_EditorClassIdentifier: 
+  id: tp
+  displayName: Toilet Paper
+  icon: {fileID: 21300000, guid: 8045fcd603f98b343a96a5682813e920, type: 3}
+  description: A leaf would more better to wipe with
+  item: {fileID: 8079366830739958774, guid: 7a345ffecaac6614ebae98c228637899, type: 3}

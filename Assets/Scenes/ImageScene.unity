@@ -254,7 +254,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4167646210236683093, guid: e32f2e76bad645746b596640d4736354, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4167646210236683093, guid: e32f2e76bad645746b596640d4736354, type: 3}
       propertyPath: m_LocalPosition.x
@@ -300,12 +300,77 @@ PrefabInstance:
       propertyPath: m_Name
       value: wine thin glass Red Wine
       objectReference: {fileID: 0}
+    - target: {fileID: 4167646210237042549, guid: e32f2e76bad645746b596640d4736354, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e32f2e76bad645746b596640d4736354, type: 3}
---- !u!1 &1018193764 stripped
+--- !u!1001 &1128580999
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5390750197129508098, guid: 7a345ffecaac6614ebae98c228637899, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5390750197129508098, guid: 7a345ffecaac6614ebae98c228637899, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5390750197129508098, guid: 7a345ffecaac6614ebae98c228637899, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.066
+      objectReference: {fileID: 0}
+    - target: {fileID: 5390750197129508098, guid: 7a345ffecaac6614ebae98c228637899, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -7.32
+      objectReference: {fileID: 0}
+    - target: {fileID: 5390750197129508098, guid: 7a345ffecaac6614ebae98c228637899, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.91485685
+      objectReference: {fileID: 0}
+    - target: {fileID: 5390750197129508098, guid: 7a345ffecaac6614ebae98c228637899, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.22345138
+      objectReference: {fileID: 0}
+    - target: {fileID: 5390750197129508098, guid: 7a345ffecaac6614ebae98c228637899, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.3163241
+      objectReference: {fileID: 0}
+    - target: {fileID: 5390750197129508098, guid: 7a345ffecaac6614ebae98c228637899, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.1142172
+      objectReference: {fileID: 0}
+    - target: {fileID: 5390750197129508098, guid: 7a345ffecaac6614ebae98c228637899, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 28.758
+      objectReference: {fileID: 0}
+    - target: {fileID: 5390750197129508098, guid: 7a345ffecaac6614ebae98c228637899, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 37.012
+      objectReference: {fileID: 0}
+    - target: {fileID: 5390750197129508098, guid: 7a345ffecaac6614ebae98c228637899, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -4.424
+      objectReference: {fileID: 0}
+    - target: {fileID: 8079366830739958774, guid: 7a345ffecaac6614ebae98c228637899, type: 3}
+      propertyPath: m_Name
+      value: BP_BR_ToiletPaper
+      objectReference: {fileID: 0}
+    - target: {fileID: 8079366830739958774, guid: 7a345ffecaac6614ebae98c228637899, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7a345ffecaac6614ebae98c228637899, type: 3}
+--- !u!1 &1128581000 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 4167646210237042549, guid: e32f2e76bad645746b596640d4736354, type: 3}
-  m_PrefabInstance: {fileID: 1018193763}
+  m_CorrespondingSourceObject: {fileID: 8079366830739958774, guid: 7a345ffecaac6614ebae98c228637899, type: 3}
+  m_PrefabInstance: {fileID: 1128580999}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1235796807
 GameObject:
@@ -406,9 +471,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pathFolder: Icons
   sceneObjects:
-  - {fileID: 1018193764}
+  - {fileID: 1128581000}
   dataObjects:
-  - {fileID: 11400000, guid: 458082ff5ba0245489133cb6edde52b8, type: 2}
+  - {fileID: 11400000, guid: 19a358cfc511f5f49aad0ed7408c75e9, type: 2}
 --- !u!1 &1567766704
 GameObject:
   m_ObjectHideFlags: 0

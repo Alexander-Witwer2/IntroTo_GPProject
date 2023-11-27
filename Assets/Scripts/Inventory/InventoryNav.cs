@@ -14,15 +14,15 @@ public class InventoryNav : MonoBehaviour
     {   
         if(Input.GetKeyDown(KeyCode.W)){
             myPos = selection.transform.position;
-            if((selection.transform.position.y+70) < 341.0f){
+            if((selection.transform.position.y+70) < 300.0f && (Inventory.current.inventory.Count - 9) > 0){
                 myPos.y += 70.0f;
                 selection.transform.position = myPos;
-                i -= 9;
+                    i -= 9;
             }
         }
         if(Input.GetKeyDown(KeyCode.S)){
             myPos = selection.transform.position;
-            if((selection.transform.position.y-70) > 69.0f){
+            if((selection.transform.position.y-70) > 50.0f && Inventory.current.inventory.Count >(i + 9)){
                 myPos.y -= 70.0f;
                 selection.transform.position = myPos;
                 i += 9;
@@ -30,7 +30,7 @@ public class InventoryNav : MonoBehaviour
         }
         if(Input.GetKeyDown(KeyCode.A)){
             myPos = selection.transform.position;
-            if((selection.transform.position.x-70) > 25.0f){
+            if((selection.transform.position.x-70) > 100.0f && (Inventory.current.inventory.Count - 1) > 0){
                 myPos.x -= 75.0f;
                 selection.transform.position = myPos;
                 i -= 1;
@@ -38,7 +38,7 @@ public class InventoryNav : MonoBehaviour
         }
         if(Input.GetKeyDown(KeyCode.D)){
             myPos = selection.transform.position;
-            if((selection.transform.position.x+75) < 750.0f){
+            if((selection.transform.position.x+75) < 850.0f && Inventory.current.inventory.Count >(i + 1)){
                 myPos.x += 75.0f;
                 selection.transform.position = myPos;
                 i += 1;
