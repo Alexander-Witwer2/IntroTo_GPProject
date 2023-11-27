@@ -7,12 +7,12 @@ public class ComputerInteract : MonoBehaviour
     public GameObject PlayerCam;
     public GameObject ComputerCam;
     public GameObject player;
-    public GameObject ButtonOne;
+    public GameObject ButtonManage;
 
     private void Update(){
         if(Input.GetKeyDown(KeyCode.E)){
             if(Vector3.Distance(gameObject.transform.position, player.transform.position) < 3f){
-                ButtonOne.SetActive(!ButtonOne.activeSelf);
+                ButtonManage.SetActive(!ButtonManage.activeSelf);
                 ComputerCam.SetActive(!ComputerCam.activeSelf);
                 PlayerCam.SetActive(!PlayerCam.activeSelf);
                 if(Cursor.lockState == CursorLockMode.Locked){
