@@ -6,6 +6,8 @@ using TMPro;
 public class WineSpillTrigger : MonoBehaviour
 {
     public TMP_Text displayText;
+    public GameObject door;
+
     private void OnTriggerEnter(Collider other)
     {
         Debug.Log("Yo");
@@ -24,6 +26,7 @@ public class WineSpillTrigger : MonoBehaviour
                 foreach(InventoryItem item in Inventory.current.inventory){
                     if(item.data.id == "tp"){
                         displayText.text = " ";
+                        Destroy(door);
                         Destroy(gameObject);
                     }
                 }
