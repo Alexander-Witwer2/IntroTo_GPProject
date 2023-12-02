@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1c7cf7b09c74a08438c2586ec2451167, type: 3}
-  m_Name: Toothbrush
+  m_Name: Key_3
   m_EditorClassIdentifier: 
-  id: toothbrush
-  displayName: Toothbrush
-  icon: {fileID: 21300000, guid: 35ffa93cf9606ed43b49af835d7af6a9, type: 3}
-  description: This thing is not long for this world
-  item: {fileID: 8214905432194260276, guid: 4df090b3acce5624794706f81bcff9b5, type: 3}
+  id: key_3
+  displayName: Key
+  icon: {fileID: 21300000, guid: d770b5151c8505b4f85e85e4dee1c24e, type: 3}
+  description: One of the keys to unlock the door. It's dusty
+  item: {fileID: 4033912322188179375, guid: 0d20e1d66b73cd747922d8c2aa19b159, type: 3}

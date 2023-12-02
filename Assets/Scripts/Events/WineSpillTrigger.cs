@@ -6,15 +6,13 @@ using TMPro;
 public class WineSpillTrigger : MonoBehaviour
 {
     public TMP_Text displayText;
-    public GameObject door;
+    public GameObject key;
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("Yo");
         if(other.tag == "sight")
         {
             displayText.text = "It's a wine Spill";
-            Debug.Log("rwgfjnrwijbrji");
         }
     }
 
@@ -26,7 +24,8 @@ public class WineSpillTrigger : MonoBehaviour
                 foreach(InventoryItem item in Inventory.current.inventory){
                     if(item.data.id == "tp"){
                         displayText.text = " ";
-                        Destroy(door);
+                        key.SetActive(true);
+                        Inventory.current.pickups = GameObject.FindGameObjectsWithTag("Pickup");
                         Destroy(gameObject);
                     }
                 }
