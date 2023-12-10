@@ -94,13 +94,5 @@ public class Inventory : MonoBehaviour
                 inNav.enabled = false;
             }
         }
-        if(Input.GetKeyDown(KeyCode.E))
-        {
-            for(int i = 0; i < pickups.Length; ++i){
-                if(Vector3.Distance(pickups[i].transform.position, player.transform.position) < 2.0f){
-                    pickups[i].GetComponent<ItemObject>().OnHandlePickupItem();
-                }
-            }
-        }
     }
 }

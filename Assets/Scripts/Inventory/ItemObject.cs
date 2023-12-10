@@ -10,4 +10,15 @@ public class ItemObject : MonoBehaviour
         Inventory.current.Add(referenceItem);
         gameObject.SetActive(false);
     }
+
+    private void OnTriggerStay(Collider other){
+        if(Input.GetKeyDown(KeyCode.E))
+        {
+            for(int i = 0; i < Inventory.current.pickups.Length; ++i){
+                if(other.tag == "sight"){
+                    Inventory.current.pickups[i].GetComponent<ItemObject>().OnHandlePickupItem();
+                }
+            }
+        }
+    }
 }
